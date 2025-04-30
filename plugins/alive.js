@@ -20,7 +20,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ┃◈┃• *⚙️ HostName*: ${os.hostname()}
-┃◈┃• *👨‍💻 Owner*: ZORO-ZMD-UPDATES
+┃◈┃• *👨‍💻 Owner*: X-KEVIN BRO
 ┃◈┃• *🧬 Version*: 1.0 (BETA)
 ╰────────────────────────┈⊷
 > *© 𝙿𝙾𝚆𝙴𝙰𝚁𝙳 𝙱𝚈 𝙭-𝙠𝙚𝙫𝙞𝙣 ✾*`;
@@ -35,7 +35,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
                     newsletterJid: '120363285813931317@newsletter',
-                    newsletterName: 'ZORO ZMD',
+                    newsletterName: 'ZORO ZMD-UPDATES',
                     serverMessageId: 143 
                 }
             }
