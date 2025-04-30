@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• *🧬 Version*: 2.0.0
 ┃◈└───────────┈⊷
 ╰──────────────┈⊷
-> *© 𝙿𝙾𝚆𝙴𝙰𝚁𝙳 𝙱𝚈 𝚀𝚄𝙴𝙴𝙽 𝚁𝙰𝚂𝙷𝚄 𝙼𝙳 ✾*`;
+> *© 𝙿𝙾𝚆𝙴𝙰𝚁𝙳 𝙱𝚈 X-KEVIN BRO ✾*`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
