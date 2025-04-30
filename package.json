@@ -31,7 +31,7 @@
     "ytsearch-venom":"1.0.0",
     "google-tts-api":"2.0.2",
     "wa-sticker-formatter":"4.4.4",
-    "mongoose":"latest",
+    "mongoose":"7.8.6",
     "ruhend-scraper":"8.0.3",
     "fb-downloader-new":"0.0.2",
     "child_process":"1.0.2",
