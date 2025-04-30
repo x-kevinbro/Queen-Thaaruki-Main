@@ -80,11 +80,12 @@ connectToWA()
 } else if (connection === 'open') {
 console.log('😼 Installing... ')
 const path = require('path');
-fs.readdirSync("./plugins/").forEach((plugin) => {
-if (path.extname(plugin).toLowerCase() == ".js") {
-require("./plugins/" + plugin);
-}
-});
+// ...existing code...
+
+// Import the menu.js file
+require('./plugins/menu');
+
+// ...existing code...
 console.log('Plugins installed successful ✅')
 console.log('Queen Rashu Md Bot connected to whatsapp ✅')
 
