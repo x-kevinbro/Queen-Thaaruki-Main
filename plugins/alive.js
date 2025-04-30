@@ -13,15 +13,15 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `╭━━〔 *𝓩𝓞𝓡𝓞 𝓩𝓜𝓓 * 〕━━┈⊷
-        Ｈｅｌｌｏ ${pushname} 👊, Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！
+        const status = `╭━━〔 *𝚭𝚯𝚪𝚯 𝚭𝚳𝐃* 〕━━┈⊷
+             Ｈｅｌｌｏ ${pushname}👊, 
+       🎐 *Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！* 🎐
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
 ┃◈┃• *⚙️ HostName*: ${os.hostname()}
 ┃◈┃• *👨‍💻 Owner*: QUEEN-RASHU-MD
-┃◈┃• *🧬 Version*: 2.0.0
-┃◈└───────────┈⊷
+┃◈┃• *🧬 Version*: 1.0 (BETA)
 ╰──────────────┈⊷
 > *© 𝙿𝙾𝚆𝙴𝙰𝚁𝙳 𝙱𝚈 X-KEVIN BRO ✾*`;
 
@@ -34,9 +34,9 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
                 forwardingScore: 1,
                 isForwarded: true,
                 forwardedNewsletterMessageInfo: {
-                    newsletterJid: '120363368882758119@newsletter',
-                    newsletterName: 'QUEEN-RASHU-MD',
-                    serverMessageId: 143
+                    newsletterJid: '120363285813931317@newsletter',
+                    newsletterName: 'ZORO ZMD',
+                    serverMessageId: 143 
                 }
             }
         }, { quoted: mek });
