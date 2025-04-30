@@ -169,6 +169,48 @@ conn.sendFileUrl = async (jid, url, caption, quoted, options = {}) => {
                 return conn.sendMessage(jid, { audio: await getBuffer(url), caption: caption, mimetype: 'audio/mpeg', ...options }, { quoted: quoted, ...options })
               }
             }
+
+        // In your index.js
+const { default: makeWASocket, useMultiFileAuthState, DisconnectReason, fetchLatestBaileysVersion, makeInMemoryStore, jidDecode, proto } = require('@adiwajshing/baileys');
+const pino = require('pino');
+const { Boom } = require('@hapi/boom');
+
+// Import the menu plugin
+const menuPlugin = require('./plugins/menu');
+const prefix = '.'; // Your command prefix
+
+// ... (rest of your Baileys setup, event listeners, etc.) ...
+
+async function handleIncomingMessage(mek, sock) {
+    // ... (your existing message handling logic) ...
+
+    if (mek.key.fromMe) return;
+    const content = mek.message?.conversation || mek.message?.extendedTextMessage?.text || '';
+    const trimmedContent = content.trim();
+    if (!trimmedContent.startsWith(prefix)) return;
+    const command = trimmedContent.substring(prefix.length).trim().split(/\s+/)[0];
+    const args = trimmedContent.split(/\s+/).slice(1);
+
+    switch (command) {
+        case 'alive':
+            // ... your alive command logic ...
+            break;
+        case menuPlugin.command.includes(command) ? command : null: // Check if the command matches the menu plugin's commands
+            await menuPlugin.handler(sock, mek);
+            break;
+        // ... other commands ...
+    }
+
+    // ... (rest of your message handling) ...
+}
+
+sock.ev.on('messages.upsert', async (m) => {
+    const mek = m.messages[0];
+    if (!mek?.message) return;
+    await handleIncomingMessage(mek, sock);
+});
+
+// ... (rest of your Baileys connection setup) ...
 //AUto Read Function By @Um4r719
 conn.ev.on('messages.upsert', async (mek) => {
     try {
