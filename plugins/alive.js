@@ -13,8 +13,8 @@ cmd({
 async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sender, senderNumber, botNumber2, botNumber, pushname, isMe, isOwner, groupMetadata, groupName, participants, groupAdmins, isBotAdmins, isAdmins, reply }) => {
     try {
         // Generate system status message
-        const status = `╭━━〔 *𝚭𝚯𝚪𝚯 𝚭𝚳𝐃* 〕━━┈⊷
-             Ｈｅｌｌｏ ${pushname}👊, 
+        const status = `╭━━━━━━〔 *𝚭𝚯𝚪𝚯 𝚭𝚳𝐃* 〕━━━━━━┈⊷
+Ｈｅｌｌｏ ${pushname}👊, 
        🎐 *Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！* 🎐
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
@@ -22,7 +22,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
 ┃◈┃• *⚙️ HostName*: ${os.hostname()}
 ┃◈┃• *👨‍💻 Owner*: ZORO-ZMD
 ┃◈┃• *🧬 Version*: 1.0 (BETA)
-╰──────────────┈⊷
+╰──────────────────────────────┈⊷
 > *© 𝙿𝙾𝚆𝙴𝙰𝚁𝙳 𝙱𝚈 X-KEVIN BRO ✾*`;
 
         // Send the status message with an image
