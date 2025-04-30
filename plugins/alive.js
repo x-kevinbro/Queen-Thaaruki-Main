@@ -14,7 +14,7 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
     try {
         // Generate system status message
         const status = `╭━━〔 *𝓩𝓞𝓡𝓞 𝓩𝓜𝓓 * 〕━━┈⊷
-        Ｈｅｌｌｏ ${sender)👊, Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！
+        Ｈｅｌｌｏ ${sender} 👊, Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
 ┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
