@@ -105,10 +105,10 @@ let up = `*𝚭𝚯𝚪𝚯 𝚭𝚳𝐃 HAS BEEN CONNECTED⚡*
 
 *🌻 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝙾𝙽:* ${formattedDate} at ${formattedTime}
 ╭────────────────────────┈⊷
-┃*♾️ REPO:* 
-┃*♾️ GET SESSION:* 
-┃*♾️ SUPPORT GROUP:*
-┃*♾️ FOLLLOW US;* 
+┃ *♾️ REPO:* 
+┃ *♾️ GET SESSION:* 
+┃ *♾️ SUPPORT GROUP:*
+┃ *♾️ FOLLLOW US;* 
 ╰────────────────────────┈⊷
 •••THANKS FOR USING OUR BOT•••
 *•────────────╴╴╴•⟢*
