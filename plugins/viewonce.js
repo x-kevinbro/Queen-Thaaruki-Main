@@ -6,11 +6,10 @@ Dont Remove Credit;
  Credit Remove කරන්න තරම් තිරිසනෙක් වෙන්න එපා ඕයි ☹
 */
 
-const axios = require('axios');
-const config = require('../config');
-const { cmd, commands } = require('../command');
-
-const fs = require("fs");
+const config = require('../config')
+const {cmd , commands} = require('../command')
+const os = require("os")
+const {runtime} = require('../lib/functions')
 
 cmd({
     pattern: "vv",
