@@ -115,7 +115,7 @@ let up = `*𝚭𝚯𝚪𝚯 𝚭𝚳𝐃 HAS BEEN CONNECTED⚡*
 > *© 𝚉𝙾𝚁𝙾 𝚉𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿-𝙱𝙾𝚃 ✾*
 *•────────────╴╴╴•⟢*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/Kp36tPhC/1377.png` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://files.catbox.moe/6iq7w6.jpg` }, caption: up })
 
 }
 })
