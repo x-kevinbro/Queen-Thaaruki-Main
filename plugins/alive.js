@@ -18,17 +18,17 @@ async (conn, mek, m, { from, quoted, body, isCmd, command, args, q, isGroup, sen
        🎐 Ｉ ａｍ Ａｌｉｖｅ Ｎｏｗ！ 🎐
 ┃◈╭─────────────·๏
 ┃◈┃• *⏳Uptime*:  ${runtime(process.uptime())} 
-┃◈┃• *📟 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
-┃◈┃• *⚙️ HostName*: ${os.hostname()}
+┃◈┃• *📈 Ram usage*: ${(process.memoryUsage().heapUsed / 1024 / 1024).toFixed(2)}MB / ${(os.totalmem() / 1024 / 1024).toFixed(2)}MB
+┃◈┃• *🔑 HostName*: ${os.hostname()}
 ┃◈┃• *👨‍💻 Owner*: ZORO-ZMD
-┃◈┃• *🧬 Version*: 2.0.0
+┃◈┃• *✅ Version*: ᴠ.1.0 (BETA)
 ┃◈└───────────┈⊷
 ╰────────────────────────┈⊷
 > *© 𝚉𝙾𝚁𝙾 𝚉𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿-𝙱𝙾𝚃 ✾*`;
 
         // Send the status message with an image
         await conn.sendMessage(from, { 
-            image: { url: `https://i.ibb.co/Kp36tPhC/1377.png` },  // Image URL
+            image: { url: `https://files.catbox.moe/6iq7w6.jpg` },  // Image URL
             caption: status,
             contextInfo: {
                 mentionedJid: [m.sender],
