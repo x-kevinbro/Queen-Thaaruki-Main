@@ -94,24 +94,27 @@ pluginFiles.forEach(file => {
         console.error(`Failed to load plugin: ${file}`, err);
     }
 });
-//====================================================
+               
+// Get the current date and time
+const now = new Date();
+const formattedDate = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const formattedTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
         
-let up = `* *~𝐐𝐔𝚵𝚵𝐍 𝐑𝚫𝐒𝐇𝐔 𝐌𝐃~ CONNECTED SUCCESSFUL 👨‍💻*
+let up = `*𝚭𝚯𝚪𝚯 𝚭𝚳𝐃 HAS BEEN CONNECTED⚡*
 
-*🌻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙶𝚁𝙾𝚄𝙿 :*
-*╭┈───────────╴╴╴•⟢*
-*│URL:* *https://chat.whatsapp.com/BZ6Yzq2TQA9Hl7GovMW1o3*
-*╰┈───────────╴╴╴•⟢*
-*🌻 𝚈𝙾𝚄𝚃𝚄𝙱𝙴 𝙲𝙷𝙰𝙽𝙽𝙴𝙻 :*
-*╭┈───────────╴╴╴•⟢*
-*│URL:* *https://youtube.com/@rashumodz_0715?si=5pg_wumwy6VzizMP*
-*╰┈───────────╴╴╴•⟢*
-
+*🌻 𝙲𝙾𝙽𝙽𝙴𝙲𝚃𝙴𝙳 𝙾𝙽:* ${formattedDate} at ${formattedTime}
+╭────────────────────────┈⊷
+┃*♾️ REPO:* 
+┃*♾️ GET SESSION:* 
+┃*♾️ SUPPORT GROUP:*
+┃*♾️ FOLLLOW US;* 
+╰────────────────────────┈⊷
+•••THANKS FOR USING OUR BOT•••
 *•────────────╴╴╴•⟢*
-> *© POWER BY QUEEN RASHU MD*
+> *© 𝚉𝙾𝚁𝙾 𝚉𝙼𝙳 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿-𝙱𝙾𝚃 ✾*
 *•────────────╴╴╴•⟢*`;
 
-conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/BsjkCDP/9555.jpg` }, caption: up })
+conn.sendMessage(ownerNumber + "@s.whatsapp.net", { image: { url: `https://i.ibb.co/Kp36tPhC/1377.png` }, caption: up })
 
 }
 })
