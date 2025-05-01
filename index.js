@@ -81,20 +81,9 @@ connectToWA()
 console.log('😼 Installing... ')
 console.log('Plugins installed successful ✅')
 console.log('Queen Rashu Md Bot connected to whatsapp ✅')
-//All plugins import
-const path = require('path');
-const pluginsPath = path.join(__dirname, 'plugins');
-const pluginFiles = fs.readdirSync(pluginsPath).filter(file => file.endsWith('.js'));
-
-pluginFiles.forEach(file => {
-    try {
-        require(path.join(pluginsPath, file));
-        console.log(`Loaded plugin: ${file}`);
-    } catch (err) {
-        console.error(`Failed to load plugin: ${file}`, err);
-    }
-});
-//====================================================
+// menu import
+        require('./plugins/menu');
+        
 let up = `* *~𝐐𝐔𝚵𝚵𝐍 𝐑𝚫𝐒𝐇𝐔 𝐌𝐃~ CONNECTED SUCCESSFUL 👨‍💻*
 
 *🌻 𝚆𝙷𝙰𝚃𝚂𝙰𝙿𝙿 𝙶𝚁𝙾𝚄𝙿 :*
