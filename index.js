@@ -81,6 +81,12 @@ connectToWA()
 console.log('😼 Installing... ')
 console.log('Plugins installed successful ✅')
 console.log('Queen Rashu Md Bot connected to whatsapp ✅')
+        
+// Get the current date and time
+const now = new Date();
+const formattedDate = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+const formattedTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
+        
 //All plugins import
 const path = require('path');
 const pluginsPath = path.join(__dirname, 'plugins');
@@ -94,11 +100,6 @@ pluginFiles.forEach(file => {
         console.error(`Failed to load plugin: ${file}`, err);
     }
 });
-               
-// Get the current date and time
-const now = new Date();
-const formattedDate = now.toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
-const formattedTime = now.toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' });
         
 let up = `*𝚭𝚯𝚪𝚯 𝚭𝚳𝐃 HAS BEEN CONNECTED⚡*
 
